@@ -1,7 +1,7 @@
 tdcli = dofile('./tg/tdcli.lua')
 serpent = (loadfile "./libs/serpent.lua")()
 feedparser = (loadfile "./libs/feedparser.lua")()
-our_id = 123456789 -- Put Here Your Bot ID
+our_id = 123456789 -- ID bot shoma 
 URL = require "socket.url"
 http = require "socket.http"
 https = require "ssl.https"
@@ -95,7 +95,7 @@ function create_config( )
 	"lock-fosh"
 	
  },
-    sudo_users = {123456789},
+    sudo_users = {123456789}, --ID shoma 
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
