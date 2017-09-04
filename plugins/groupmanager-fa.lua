@@ -3368,23 +3368,6 @@ end
 	end
 end
 -----------------------------------------
-local function pre_process(msg)
-   local chat = msg.chat_id_
-   local user = msg.sender_user_id_
- local data = load_data(_config.moderation.data)
-	local function welcome_cb(arg, data)
-local hash = "gp_lang:"..arg.chat_id
-local lang = redis:get(hash)
-		administration = load_data(_config.moderation.data)
-    if administration[arg.chat_id]['setwelcome'] then
-     welcome = administration[arg.chat_id]['setwelcome']
-      else
-     if not lang then
-     welcome = "*Welcome Dude*"
-    elseif lang then
-     welcome = "_خوش آمدید_"
-        end
-     end
  if administration[tostring(arg.chat_id)]['rules'] then
 rules = administration[arg.chat_id]['rules']
 else
