@@ -3358,7 +3358,6 @@ end
 		local welcome = welcome:gsub("{rules}", rules)
 		local welcome = welcome:gsub("{name}", check_markdown(data.first_name_))
 		local welcome = welcome:gsub("{username}", user_name)
-		tdcli.sendMessage(arg.chat_id, arg.msg_id, 0, welcome, 0, "md")
 	end
 	if data[tostring(chat)] and data[tostring(chat)]['settings'] then
 	if msg.adduser then
